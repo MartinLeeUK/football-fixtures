@@ -1,0 +1,9 @@
+<!doctype html>
+<title>List of Competitions Tracked</title>
+<ul>
+      {% for id, details in content.items() %}
+            <p><a href="/league/{{ id}}">{{ details['caption'] }}</a>
+
+
+      {% endfor %}
+</ul>

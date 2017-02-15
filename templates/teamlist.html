@@ -1,0 +1,7 @@
+<!doctype html>
+<title>List of Teams in League</title>
+<ul>
+      {% for id, name in content.items() %}
+            <p><a href="/team/{{ id }}">{{ name }}</a>
+      {% endfor %}
+</ul>
